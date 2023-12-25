@@ -53,6 +53,7 @@ func TestProductDb_Get(t *testing.T) {
 }
 
 func TestProductDb_Save(t *testing.T) {
+	setUp()
 	defer Db.Close()
 	productDb := db.NewProductDb(Db)
 
